@@ -22,7 +22,6 @@ Máquinas se organiza alrededor de cinco áreas conceptuales:
 
 La relación principal es:
 
-```text
 Alumno
   └── recorre un Curso
         └── enseña una Máquina
@@ -36,7 +35,6 @@ Curso
 
 Grafo de conocimiento
   └── explica la Máquina, sus Componentes y sus Relaciones
-```
 
 ---
 
@@ -96,13 +94,12 @@ Cada componente debe poder responder al menos estas preguntas:
 
 ### Jerarquía de componentes
 
-No existe una entidad distinta llamada `SubComponent`.
-
 Un subcomponente es simplemente un componente observado desde la perspectiva de otro componente que lo contiene. La misma pieza puede ser:
 
 - un componente de la máquina completa;
-- un subcomponente de un conjunto mayor;
-- un conjunto compuesto por partes todavía más pequeñas.
+- un componente de un componente de la máquina completa;
+- un componente de un componente de un componente de la máquina completa;
+- ...
 
 Esta estructura puede repetirse hasta alcanzar el nivel de detalle necesario para el objetivo del curso.
 
@@ -111,7 +108,7 @@ Máquina
         └── Componente
               └── Componente
 
-El nivel de profundidad no busca representar toda la realidad. Se detiene cuando agregar más detalle deja de contribuir al objetivo educativo.
+El nivel de profundidad no busca representar toda la realidad. Se detiene cuando agregar más detalle deja de contribuir al objetivo del curso.
 
 ### Relaciones
 
@@ -584,7 +581,7 @@ Máquina: Candado de combinación
     - Mecanismo de bloqueo
     - Selector de combinación
 
-Curso: Comprender un candado de combinación
+Curso: Candado de combinación
   Capítulo 1: El cuerpo y el arco
     Lección: Qué mantiene cerrado el candado
       Paso 1: colocar el arco
