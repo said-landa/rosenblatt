@@ -62,7 +62,6 @@ El primer curso debe contar una historia funcional de principio a fin con el men
 
 # Flujo general
 
-```text
 Proponer una máquina
         ↓
 Seleccionar y delimitar
@@ -92,7 +91,6 @@ Validar con expertos y alumnos
 Publicar
         ↓
 Observar, corregir y mantener
-```
 
 Cada flecha representa una puerta de calidad. Si la salida de una etapa no es suficiente, el curso no avanza todavía.
 

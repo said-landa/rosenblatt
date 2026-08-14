@@ -1,6 +1,6 @@
 El objetivo del proyecto NO es escribir código rápido.
 
-El objetivo es construir una plataforma que pueda mantenerse durante muchos años.
+El objetivo es construir una plataforma que pueda mantenerse durante muchas décadas.
 
 Siempre se priorizarán:
 
