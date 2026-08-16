@@ -453,7 +453,7 @@ Un intento incorrecto debe ayudar a razonar. La retroalimentación puede:
 - reducir gradualmente la dificultad;
 - mostrar una consecuencia conceptual sencilla.
 
-No debe limitarse a decir «incorrecto» ni colocar automáticamente la pieza desde el primer intento.
+No debe limitarse a decir «incorrecto» ni colocar automáticamente la pieza por el alumno desde el primer intento fallido.
 
 ## Puntos de ensamblaje
 
