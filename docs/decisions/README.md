@@ -53,3 +53,4 @@ Use a four-digit sequence and a short English slug, for example:
 | [0001](0001-separate-human-and-llm-documentation.md) | Accepted | Separate human and LLM documentation while sharing one decision ledger. |
 | [0002](0002-creator-authorship-and-llm-engineering-boundary.md) | Accepted | Keep Machine, Course, and learner-experience authorship with the creator while the LLM owns enabling engineering by default. |
 | [0003](0003-machines-native-engine-foundation.md) | Accepted | Build a Machines-native engine rather than adopting a generic game engine as the product foundation. |
+| [0004](0004-select-w1-pin-tumbler-reference-course.md) | Accepted | Use the Master Lock W1 four-pin pin-tumbler cylinder as the first bounded reference Course. |
