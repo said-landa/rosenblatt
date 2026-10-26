@@ -5,7 +5,7 @@
 ## Purpose
 
 This directory is the rigorous operating memory for LLM collaborators working
-on Machines. It preserves enough semantic, process, research, and engineering
+on Rosenblatt (formerly Machines). It preserves enough semantic, process, research, and engineering
 context to plan and implement deeply without requiring the creator to carry the
 same reading burden.
 
@@ -120,3 +120,11 @@ ledger, evidence, code, or tests.
 Repository documentation is written in English. `Machines` is the project name;
 `Machine` is the domain entity. In-product interface copy may follow a separate
 language policy when product implementation begins.
+
+## Current product expansion proposal
+
+[Origin journey](origin-journey.md) captures the creator's shared-root direction,
+scientific ordering, repeat-once principle and later paid-branch hypothesis.
+See [0007](../decisions/0007-shared-origin-journey.md) for decision status.
+
+Authorized Assembly Journey study (2026-10-23): [Assembly journey](assembly-journey.md).

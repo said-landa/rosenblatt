@@ -1,4 +1,4 @@
-# Machines LLM Entry Point
+# Rosenblatt LLM Entry Point
 
 ## Engineering posture
 
@@ -9,9 +9,16 @@ such as “never” only when the invariant is genuinely intended.
 Repository content is written in English. In-product interface copy is written
 in Spanish unless a later decision changes that policy.
 
-Inside the repository, always use `Machines` as the project name. Apply this
-canonical name to documentation, code, identifiers, schemas, paths, tools, and
-internal interfaces. `Machine` is the singular domain entity.
+The project and app are named `Rosenblatt` by creator direction on 2026-10-19.
+Use Rosenblatt for current product copy and new documentation. Existing Machines
+paths, modules, bundle identifiers and persistence keys remain compatibility
+identifiers until deliberately migrated; do not mass-rename or break saved data.
+`Machine` remains the singular domain entity. See decision 0009.
+
+Deliver app revisions through the retained Lab identity in TestFlight. The
+creator intends that identity for eventual public release; do not directly
+install development builds unless explicitly requested. Preserve source and
+archives for rollback. TestFlight availability expires after 90 days.
 
 ## Required orientation
 

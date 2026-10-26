@@ -1,6 +1,6 @@
 # 0004 — Select the W1 Pin-Tumbler Reference Course
 
-- Status: Accepted
+- Status: Superseded by [Decision 0005](0005-select-reference-padlock-01.md)
 - Date: 2026-09-01
 - Decided by: Creator
 

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#121212">
+<title>Machines · Mouse óptico</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="./style.css">
+<script type="importmap">{"imports":{"three":"../../../node_modules/three/build/three.module.js","three/addons/":"../../../node_modules/three/examples/jsm/"}}</script>
+</head>
+<body data-theme="dark" data-screen="courses">
+<main id="app">
+
+  <header class="topbar">
+    <button id="back" class="back" aria-label="Volver" hidden>‹</button>
+    <span id="breadcrumb">Cursos</span>
+    <span class="streak" aria-label="Racha local: 0 días" title="Racha en este dispositivo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2 5 14h6l-1 8 9-13h-6z"/></svg><strong id="streak-count">0</strong></span>
+  </header>
+  <nav id="course-carousel" aria-label="Cursos" hidden><button id="carousel-mouse" aria-current="true"><span class="carousel-art"><svg viewBox="0 0 64 80" aria-hidden="true"><rect x="12" y="12" width="40" height="60" rx="20"/><path d="M32 12v23M12 38h40M32 2v10"/><rect x="29" y="20" width="6" height="12" rx="3"/></svg></span><span>Mouse</span></button></nav>
+  <nav id="bottom-nav" aria-label="Navegación principal">
+    <button data-section="home"><svg viewBox="0 0 24 24"><path d="m3 10 9-8 9 8v12h-6v-8H9v8H3z"/></svg><span>Home</span></button>
+    <button data-section="courses"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="14" height="17" rx="3"/><path d="m9 14 3 3 5-6M9 2l10 1q3 0 3 3l-1 11"/></svg><span>Courses</span></button>
+    <button data-section="you"><svg viewBox="0 0 24 24"><circle cx="12" cy="6" r="4"/><path d="M3 22v-3a9 7 0 0 1 18 0v3z"/></svg><span>You</span></button>
+  </nav>
+  <section id="library" aria-label="Cursos y lecciones"><div class="library-heading"><p id="section-kicker">UN OBJETO. TODO UN MUNDO.</p><h1 id="section-title">Cursos</h1><p id="section-description"></p></div><div id="cards"></div></section>
+  <div id="viewport" aria-label="Modelo 3D de la lección" hidden></div>
+  <aside id="lesson-card" hidden aria-label="Lección seleccionada">
+    <div class="lesson-caption"><span id="lesson-number"></span><span id="lesson-state"></span></div>
+    <h2 id="lesson-title"></h2>
+    <p id="lesson-description"></p>
+    <button id="lesson-action" class="primary-action">Start</button>
+  </aside>
+  <div id="loading" role="status">Preparando el curso…</div>
+  <div id="error" role="alert" hidden></div>
+  <p id="save-notice" role="status" hidden>El progreso no se pudo guardar en este dispositivo.</p>
+</main>
+<script type="module" src="./main.js"></script>
+</body>
+</html>

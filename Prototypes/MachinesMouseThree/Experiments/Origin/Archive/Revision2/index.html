@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#080914">
+<title>Machines</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="./style.css">
+<script type="importmap">{"imports":{"three":"../../../node_modules/three/build/three.module.js","three/addons/":"../../../node_modules/three/examples/jsm/"}}</script>
+</head>
+<body>
+<main>
+<div id="viewport" role="img" aria-label="Región del universo temprano. Modelo visual de expansión y formación de un núcleo de helio."></div>
+<header><button id="info" aria-label="Información del modelo"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-11v1"/></svg></button></header>
+<div id="chapter" aria-live="polite"></div>
+<button id="focus" aria-label="Mantener para expandir el espacio"><span class="contact"></span><svg viewBox="0 0 24 24"><path d="m9 9-6-6m0 6V3h6m6 12 6 6m-6 0h6v-6"/></svg></button>
+<p id="cue">Mantén</p>
+<button id="particle" hidden aria-label="Arrastrar partícula al lugar iluminado"><span class="particle proton">+</span></button>
+<div id="drop-target" aria-hidden="true"></div>
+<svg id="guide" aria-hidden="true"><path/></svg>
+<div id="progress" role="progressbar" class="sr-only" aria-label="Avance de esta experiencia" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+<dialog id="explanation"><button id="close-info" aria-label="Cerrar información"><svg viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg></button><h1>Del calor a la estructura</h1><p>El espacio se expande y el universo se enfría. Aquí avanzas una secuencia simplificada: no eliges las leyes físicas.</p><p>Después exploras un núcleo de helio-4: dos protones y dos neutrones. Las piezas representan su composición; la formación real ocurre mediante reacciones nucleares.</p><p>No sabemos qué inició la expansión. El tiempo, los tamaños y los colores están adaptados para explorar. Los puntos iniciales representan plasma, no estrellas. Un núcleo aún no es un átomo. El sonido y la vibración son señales de la experiencia, no sonidos del espacio.</p><div class="preferences"><button id="sound" aria-label="Silenciar sonido" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4zM17 8q5 4 0 8"/></svg></button><button id="replay" aria-label="Repetir esta experiencia"><svg viewBox="0 0 24 24"><path d="M5 8a8 8 0 1 1-1 7M5 3v6h6"/></svg></button></div></dialog>
+<p id="notice" role="status" class="sr-only"></p>
+<div id="failure" role="alert" hidden>La vista 3D no pudo abrirse. Vuelve a cargar la app.</div>
+</main>
+<script type="module" src="./main.js"></script>
+</body>
+</html>

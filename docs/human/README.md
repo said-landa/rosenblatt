@@ -2,7 +2,7 @@
 
 > Detailed counterpart: [LLM documentation](../llm/README.md)
 
-This is the creator's working surface for Machines. It is intentionally short.
+This is the creator's working surface for Rosenblatt. It is intentionally short.
 You should be able to understand the current position and make the next decision
 without reading the full technical corpus.
 
@@ -65,3 +65,11 @@ Those are LLM responsibilities under the
 Accepted choices live in the [decision ledger](../decisions/README.md). If a
 human summary and a detailed specification disagree, the discrepancy must be
 surfaced and repaired.
+
+## Current product expansion proposal
+
+[Origin journey](origin-journey.md) captures the creator's shared-root direction,
+scientific ordering, repeat-once principle and later paid-branch hypothesis.
+See [0007](../decisions/0007-shared-origin-journey.md) for decision status.
+
+Authorized Assembly Journey study (2026-10-23): [Assembly journey](assembly-journey.md).

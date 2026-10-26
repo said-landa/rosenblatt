@@ -1,0 +1,9 @@
+node_modules/
+evidence/*.png
+iOS/build*/
+iOS/MachinesMousePreview/Web/
+iOS/MachinesMouseLab/Web/
+**/xcuserdata/
+evidence/*.log
+# Local App Store Connect captures include account information. Keep release text instead.
+Experiments/Constituents/Evidence/rosenblatt-testflight-*.png

@@ -1,0 +1,13 @@
+{
+  "source": "MachinesMouseThree working tree",
+  "files": {
+    "index.html": "3e3800101de9150f74c3ded8f733c825e96eb0570330a6f9b504d28401d3bc7e",
+    "style.css": "f91c53779e905ecd502f948683a51f9a802e84828f606e67e35db4b49dbf0101",
+    "main.js": "c0060bd4c03afaa5417117a509661721642ab42bd77c9c955449ec042bd0da06",
+    "model.js": "d52a4f62f4157320b96af2918e24d00616e59a6b63d2b18775d1daa332f0679e",
+    "assembly.js": "2ef44fdbb3c1fb8cc37390c17e199e3fad5bcd342f1d3e4859c7526b34e3add1",
+    "assembly-view.js": "b881f717ee6cff1a20f34c6d5e4e8f564a4ac1354f68a74140a32e0d02483f78",
+    "deep-dive.js": "7a8aac3a4bdcfc00e921e5bb4ee6f1183b5a2dc0962ade1196ff43f0bd420a57",
+    "deep-dive-view.js": "88a1ea7179887cf1ea75cfc581705f177eeee9c17469c5cf26ddd80412230077"
+  }
+}
