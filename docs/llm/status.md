@@ -4,6 +4,13 @@
 
 ## Machine-first direction and code participation — 2026-10-26
 
+Creator follow-up: focus the first experience on electronics; the exact device
+is still open. The quiet wordmark/fade is approved as a direction, with physical
+review pending. Code workflow: small walkthrough, then creator edits. Next:
+narrow the electronic behavior to sensing, signals or computation before device
+selection. These are authoring candidates, not researched device selections.
+
+
 The creator requests reverse engineering from a complete Machine to the depth
 needed for functional understanding, a different first Machine from the mouse,
 focused authorship questions, direct participation in fine code details, a

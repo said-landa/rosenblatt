@@ -19,7 +19,9 @@ it is not yet the whole mobile app engine.
 | Offline packaging entry | `Prototypes/MachinesMouseThree/scripts/build-ios-lab-web.mjs` |
 | iOS target, version and build number | `Prototypes/MachinesMouseThree/iOS/MachinesMouseLab.xcodeproj` |
 
-A first small walkthrough can follow the introduction:
+Your chosen workflow is a small walkthrough followed by your own edit. We will
+identify the intended behavior and the relevant function before handing over
+the edit. A first walkthrough can follow the introduction:
 
 1. `introVisible` belongs to the SwiftUI App. It starts true for the Lab.
 2. The WebView loads while `RosenblattIntroduction` covers it.

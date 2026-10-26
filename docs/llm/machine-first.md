@@ -14,7 +14,8 @@ a whole Course around an assistant suggestion.
 The concrete authored behavior in scope is a two-to-three-second introduction on
 cold launch, followed by the regular interface, without replay on background
 return. Initial visual choice: a centered wordmark against #080d13; no new asset,
-audio, analytics, persistence key or dependency. This remains a taste candidate.
+audio, analytics, persistence key or dependency. The creator approved the quiet
+wordmark/fade in the follow-up; physical implementation acceptance remains open.
 
 Implementation is in `MachinesMousePreviewApp.swift`, shared by the retained
 native targets. The overlay is Lab-only. App-owned `@State` starts visible once;
@@ -45,10 +46,18 @@ an authoring proposal to refine through the selected Machine, not a validated
 universal pedagogy. Reuse supported science and shared investigations without
 forcing every learner through the entire constituent graph.
 
-Invite creator code participation without requiring routine supervision. Keep
-small functions and explain which state owns each visible behavior. Ask whether
-the creator wants to write, edit together or review; an unanswered preference
-must not block independent build, documentation and source-control work.
+The creator selected small walkthroughs followed by their own edits. Explain
+which function/state controls the behavior, propose one bounded edit, then leave
+that edit for the creator. Continue independent enabling engineering without
+requiring routine supervision. Do not keep asking for this working preference.
+
+The first domain is electronics. The earlier hand-cranked flashlight suggestion
+is withdrawn as the active recommendation. Mechanical-first introductions such
+as locks or bicycles do not match this opening preference. Do not infer that
+analog electronics is excluded: sensing, analog signals and digital computation
+remain candidates. Narrow the observable behavior before choosing an exact
+device/variant. No replacement scene or Course is authorized by this domain
+selection alone.
 
 ## Compatibility and delivery
 

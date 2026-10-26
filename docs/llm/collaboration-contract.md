@@ -5,7 +5,8 @@
 ## Creator code participation — 2026-10-26
 
 The creator explicitly wants to understand and participate in code and fine
-implementation details. Invite small walkthroughs and direct edits; do not use
+implementation details. Their chosen workflow is a small walkthrough followed
+by their own edit. Leave an agreed creator edit for them; do not use
 the default engineering responsibility split to exclude that participation.
 Continue handling routine engineering without requiring supervision. Ask focused
 experience questions before inventing Course or Machine details. See

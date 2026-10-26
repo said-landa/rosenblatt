@@ -25,8 +25,9 @@ must not be used to exclude the creator from programming.
 
 Implement a temporary cold-launch introduction lasting about two to three seconds,
 then reveal the regular app. Returning from the background must not replay it.
-The exact visual treatment is a review candidate. A restrained dark wordmark is
-the initial engineering choice, not evidence of creator taste acceptance.
+The creator subsequently approved the quiet wordmark on a dark background and
+fade. That approval establishes the visual direction; physical timing, typography
+and device behavior still need review.
 
 The creator explicitly authorizes committing and pushing the accumulated source
 changes to GitHub and requests instructions for personally delivering future
@@ -64,10 +65,12 @@ the requested learning sequence.
 ## Evidence and uncertainty
 
 The user's request establishes direction, involvement and Git authorization.
-It does not settle the first Machine, target learner, exact depth, navigation,
-interaction language, visual style or publication readiness. A hand-cranked
-flashlight is a recommendation for discussion, not a researched or selected
-variant. The system-managed iOS launch screen and this in-app introduction are
+The follow-up selects electronics as the initial domain, approves the quiet
+wordmark/fade, and selects small code walkthroughs followed by creator edits.
+It does not settle the exact electronic Machine, target learner, depth,
+navigation, interaction language or publication readiness. The earlier
+hand-cranked flashlight suggestion is withdrawn as the active recommendation;
+the creator wants electronics rather than a primarily mechanical introduction. The system-managed iOS launch screen and this in-app introduction are
 separate. Physical timing, appearance and accessibility need review.
 
 ## Reversibility and next action
@@ -80,3 +83,15 @@ is implemented from this direction record alone.
 Next: select one Machine, then ask which observable action the learner should
 understand first. Use that answer to propose one complete-machine scene and one
 subsystem transition, with a short code walkthrough before further expansion.
+
+## Creator follow-up — 2026-10-26
+
+Prioritize electronics. Locks and bicycles are not the desired first learning
+focus. This does not reject analog electronics: the creator has not yet selected
+analog signals, sensing, digital logic or another electronic domain. Do not
+silently reinterpret the preference as digital-only.
+
+Working mode is now explicit: explain a small change and its relevant code, then
+let the creator edit. Perform independent enabling work as needed, but do not
+preempt an edit deliberately reserved for the creator. Next question narrows the
+observable behavior: sensing, signals or computation. No device is selected yet.

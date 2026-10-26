@@ -4,9 +4,9 @@
 
 ## Current direction — 2026-10-26
 
-Begin with a complete Machine and investigate downward only as deeply as its
-functional explanation requires. Select a different Machine from the mouse with
-the creator, who now wants direct participation in code and fine details.
+Begin with a complete electronic Machine and investigate downward only as deeply
+as its functional explanation requires. Select a different Machine from the
+mouse with the creator. Use small code walkthroughs followed by creator edits.
 [Decision 0011](../decisions/0011-machine-first-investigation-and-code-collaboration.md)
 supersedes the mandatory constituent-first opening. Prior construction studies
 remain recoverable; the next Machine and its exact experience are unselected.
