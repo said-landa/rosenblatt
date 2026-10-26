@@ -128,3 +128,5 @@ scientific ordering, repeat-once principle and later paid-branch hypothesis.
 See [0007](../decisions/0007-shared-origin-journey.md) for decision status.
 
 Authorized Assembly Journey study (2026-10-23): [Assembly journey](assembly-journey.md).
+
+Current direction (2026-10-26): [Machine-first investigation](machine-first.md).

@@ -1,5 +1,10 @@
 # Rosenblatt Assembly Journey — Study and Engineering Contract
 
+> Update 2026-10-26: [0011](../decisions/0011-machine-first-investigation-and-code-collaboration.md)
+> replaces the mandatory foundation-first opening with machine-first investigation.
+> This retained study still supplies the packaged content until a replacement is
+> selected and authored; its earlier next actions below are historical.
+
 > Human counterpart: [Assembly journey](../human/assembly-journey.md)
 > Proposed: 2026-10-21; implementation authorized: 2026-10-23
 > Status: bounded foundation-plus-circuit study implemented; physical and creator acceptance pending

@@ -1,5 +1,11 @@
 # Rosenblatt — Assembly Journey Study
 
+> Update 2026-10-26: the [machine-first direction](../../../../docs/human/machine-first.md)
+> replaces mandatory foundation-first sequencing. This study remains the packaged
+> content pending selection of the next Machine. Candidate 1.0 (7) adds a native
+> cold-launch introduction; it has not been uploaded.
+
+
 Authorized by the creator on 2026-10-23 in response to the proposed foundation
 journey and separate working circuit. This isolated study is the Lab entry;
 `Experiments/Constituents/Source` remains preserved. It is not a complete Course.

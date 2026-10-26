@@ -5,6 +5,10 @@
 - Decided by: Creator
 - Refines: [0007](0007-shared-origin-journey.md)
 
+> Sequencing update 2026-10-26: [0011](0011-machine-first-investigation-and-code-collaboration.md)
+> supersedes the mandatory foundation-first opening. Existing studies remain
+> retained evidence; the next experience starts from a selected complete Machine.
+
 ## Decision
 
 Machines is a connected chain of construction from the deepest scientifically

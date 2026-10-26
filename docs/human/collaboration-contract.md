@@ -6,6 +6,15 @@ The intended working life is asymmetric: you spend most of your time creating
 Machines, Courses, and the learner experience. The LLM absorbs the enabling
 engineering and operational burden.
 
+## Creator code participation — 2026-10-26
+
+The creator explicitly wants to understand and participate in code and fine
+implementation details. Invite small walkthroughs and direct edits; do not use
+the default engineering responsibility split to exclude that participation.
+Continue handling routine engineering without requiring supervision. Ask focused
+experience questions before inventing Course or Machine details. See
+[0011](../decisions/0011-machine-first-investigation-and-code-collaboration.md).
+
 ## Your primary arena
 
 You lead and approve:

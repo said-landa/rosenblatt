@@ -10,10 +10,13 @@ validated commercial product reproduction.
 - Xcode project: `iOS/MachinesMousePreview.xcodeproj`
 - Model: `model.js`; scene and interaction: `main.js`; layout: `style.css`.
 
-## Current delivery — 2026-10-19
+## Current delivery — updated 2026-10-26
 
 The active app is Rosenblatt. Build the Lab target, `iOS/MachinesMouseLab.xcodeproj`,
-with the current [Constituents experience](Experiments/Constituents/README.md).
+with the retained [Assembly Journey study](Experiments/AssemblyJourney/README.md).
+The next direction is [machine-first investigation](../../docs/human/machine-first.md);
+[code map](../../docs/human/code-map.md) and [self-service TestFlight guide](../../docs/human/testflight.md)
+explain the current entry points. Candidate 1.0 (7) adds a native cold-launch introduction; it is not uploaded.
 It deliberately uses Rosenblatt's existing `com.machines.mouse.preview` identity;
 `RosenblattLabExperience` selects the native Lab behavior independently of the
 bundle suffix. This keeps one app and its TestFlight history for eventual release.

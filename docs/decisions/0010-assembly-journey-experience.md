@@ -5,6 +5,10 @@
 - Decided by: Creator (requirements and rejection of current presentation)
 - Refines: 0008; preserves 0002, 0003 and 0009
 
+> Sequencing update 2026-10-26: [0011](0011-machine-first-investigation-and-code-collaboration.md)
+> supersedes the mandatory foundation-first opening. Existing studies remain
+> retained evidence; the next experience starts from a selected complete Machine.
+
 ## Decision
 
 The current particle presentation does not meet the creator's intended

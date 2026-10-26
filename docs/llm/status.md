@@ -2,6 +2,44 @@
 
 > Human counterpart: [Current Project Position](../human/status.md)
 
+## Machine-first direction and code participation — 2026-10-26
+
+The creator requests reverse engineering from a complete Machine to the depth
+needed for functional understanding, a different first Machine from the mouse,
+focused authorship questions, direct participation in fine code details, a
+cold-launch introduction, GitHub commit/push, and self-operated TestFlight
+instructions. [0011](../decisions/0011-machine-first-investigation-and-code-collaboration.md)
+supersedes mandatory foundation-first sequencing; no new Machine/variant is
+selected. [Machine-first engineering state](machine-first.md) defines boundaries.
+Reference Padlock 01 remains the separate native reference, not an implicit new
+Lab opening. Earlier dated entries below preserve historical state.
+
+Implemented: a Lab-only native wordmark overlay using App-owned transient state,
+concurrent WebView loading, 2.15-second hold plus 0.35-second fade, a 2.5-second
+static Reduced Motion alternative, input/accessibility exclusion while covered,
+and failure-UI precedence. Background return does not reset the flag. Detailed
+visual and physical lifecycle acceptance remain pending.
+
+Verified this cycle: 37 web tests, JavaScript syntax, offline packaging, 11 native
+Swift package tests and unsigned iOS simulator compilation. The initial sandbox
+Swift cache and CoreSimulator access failures were environmental; using temporary
+module caches and authorized Xcode access completed both checks. Simulator build
+log: `/private/tmp/rosenblatt-intro-build.log`. Native tests exercise retained
+compiler/runtime/geometry, not the overlay's timing or device feel. No simulator
+or physical installation, signed archive, TestFlight upload or learning study
+was performed. Candidate is 1.0 (7); Apple build-number availability is unqueried.
+
+Accumulated source was preserved in commit `2044a57`; current work is separate.
+GitHub read inspection confirms the old remote redirects to private
+`said-landa/rosenblatt`, whose main matched the original local HEAD before this
+checkpoint. Account-bearing App Store Connect captures remain local and ignored.
+The current content is still Assembly Journey pending Machine authorship.
+[Code map](../human/code-map.md) and [TestFlight procedure](../human/testflight.md)
+now support creator participation. Next: Machine selection, then one observable
+function and its first subsystem transition. Do not invent a complete Course
+while that selection is pending. Prior build 6 processing/device state remains
+unverified this cycle.
+
 ## Assembly Journey study — 2026-10-23
 
 The creator authorized the proposed foundation plus working circuit study with

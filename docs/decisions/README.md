@@ -65,3 +65,5 @@ Use a four-digit sequence and a short English slug, for example:
 - [0009 — Rosenblatt and One TestFlight Delivery Identity](0009-rosenblatt-lab-testflight-delivery.md) — Accepted creator direction; one retained app and versioned releases.
 
 - [0010 — Assembly Journey Experience](0010-assembly-journey-experience.md) — Accepted requirements; bounded foundation-plus-circuit study authorized 2026-10-23.
+
+- [0011 — Machine-First Investigation and Code Collaboration](0011-machine-first-investigation-and-code-collaboration.md) — Accepted direction; next Machine pending.

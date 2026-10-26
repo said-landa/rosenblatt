@@ -1,19 +1,22 @@
 # Rosenblatt
 
-Rosenblatt teaches construction from fundamental constituents toward natural
-and technological systems. The current Lab entry is the
-[Assembly Journey study](Prototypes/MachinesMouseThree/Experiments/AssemblyJourney/README.md):
-a brief shared foundation, purposeful 3D camera travel, visible future paths and
-a separately identified working switch/resistor/LED circuit preview.
+Rosenblatt helps people understand how machines work. The current direction is
+to begin with a complete Machine and investigate its subsystems only as deeply
+as the explanation requires. The creator will choose the next Machine and
+participate directly in the code; see [machine-first direction](docs/human/machine-first.md).
 
-The creator authorized this study on 2026-10-23 after rejecting the earlier
-particle presentation. [Assembly journey](docs/human/assembly-journey.md) records
-the scope; this is an experimental slice, not an accepted complete Course.
-The prior constituent experience, progress namespaces and release archives remain.
+The retained [Assembly Journey study](Prototypes/MachinesMouseThree/Experiments/AssemblyJourney/README.md)
+still supplies the app content pending that selection. A native cold-launch
+wordmark introduces the app for about 2.5 seconds. Its visual/device acceptance
+remains open; this is not yet a new machine-first Course.
+
+Start contributing with the [code map](docs/human/code-map.md) and
+[creator-operated TestFlight guide](docs/human/testflight.md).
 
 The Lab target delivers through the existing Rosenblatt TestFlight app,
-`com.machines.mouse.preview`. Candidate 1.0 (6) uploaded successfully; Apple processing and Insiders availability
-remain to be verified. Build 4 is retained
+`com.machines.mouse.preview`. Candidate 1.0 (7) adds the native introduction and passes simulator compilation;
+it has not been archived or uploaded. Build 6 uploaded previously, with Apple
+processing and Insiders availability still unverified here. Build 4 is retained
 for rollback within TestFlight's availability window. See
 [current status](docs/human/status.md) and
 [decision 0009](docs/decisions/0009-rosenblatt-lab-testflight-delivery.md).

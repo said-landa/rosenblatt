@@ -1,5 +1,10 @@
 # Assembly Journey
 
+> Update 2026-10-26: [0011](../decisions/0011-machine-first-investigation-and-code-collaboration.md)
+> replaces the mandatory foundation-first opening with machine-first investigation.
+> This retained study still supplies the packaged content until a replacement is
+> selected and authored; its earlier next actions below are historical.
+
 > Authorized as a bounded study: 2026-10-23, “do it”.
 > [Engineering counterpart](../llm/assembly-journey.md) · [0010](../decisions/0010-assembly-journey-experience.md)
 

@@ -8,9 +8,12 @@ private let isLab = Bundle.main.object(forInfoDictionaryKey: "RosenblattLabExper
 
 @main
 struct MachinesMousePreviewApp: App {
+    // Process-local presentation state: returning from the background does not replay it.
+    @State private var introVisible = isLab
+
     var body: some Scene {
         WindowGroup {
-            MachinesMousePreviewScreen()
+            MachinesMousePreviewScreen(introVisible: $introVisible)
                 .preferredColorScheme(isLab ? .dark : .light)
         }
     }
@@ -18,6 +21,8 @@ struct MachinesMousePreviewApp: App {
 
 private struct MachinesMousePreviewScreen: View {
     @Environment(\.scenePhase) private var scenePhase
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Binding var introVisible: Bool
     @State private var failure: String?
     @State private var reloadID = UUID()
     @State private var navigationSection = "home"
@@ -29,6 +34,8 @@ private struct MachinesMousePreviewScreen: View {
             MachinesMouseWebView(isActive: scenePhase == .active, failure: $failure, navigationSection: $navigationSection, navigationVisible: $navigationVisible)
                 .id(reloadID)
                 .ignoresSafeArea()
+                .allowsHitTesting(!introVisible)
+                .accessibilityHidden(introVisible)
             if let failure {
                 VStack(spacing: 18) {
                     Image(systemName: "arrow.trianglehead.clockwise")
@@ -45,13 +52,47 @@ private struct MachinesMousePreviewScreen: View {
                 .frame(maxWidth: 360)
                 .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 22))
             }
+            if introVisible && failure == nil {
+                RosenblattIntroduction()
+                    .transition(.opacity)
+                    .zIndex(1)
+            }
+        }
+        .task {
+            guard introVisible else { return }
+            // The WebView loads concurrently. No blocking sleep on the UI thread.
+            do {
+                try await Task.sleep(for: .seconds(reduceMotion ? 2.5 : 2.15))
+            } catch { return }
+            withAnimation(reduceMotion ? nil : .easeOut(duration: 0.35)) {
+                introVisible = false
+            }
         }
         .overlay(alignment: .bottom) {
-            if isLab && navigationVisible && failure == nil {
+            if isLab && navigationVisible && failure == nil && !introVisible {
                 MachinesLabNavigation(selection: $navigationSection)
                     .padding(.bottom, 12)
             }
         }
+    }
+}
+
+// An in-app introduction, separate from the system-managed iOS launch screen.
+// Keep its first version small so timing, type and transition can be reviewed independently.
+private struct RosenblattIntroduction: View {
+    var body: some View {
+        ZStack {
+            Color(red: 8 / 255, green: 13 / 255, blue: 19 / 255)
+                .ignoresSafeArea()
+            Text("Rosenblatt")
+                .font(.system(.largeTitle, design: .default, weight: .medium))
+                .tracking(0.7)
+                .foregroundStyle(.white)
+                .padding(24)
+                .multilineTextAlignment(.center)
+                .accessibilityAddTraits(.isHeader)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
