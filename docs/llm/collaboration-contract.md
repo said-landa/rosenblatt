@@ -2,6 +2,16 @@
 
 > Human counterpart: [Collaboration Contract](../human/collaboration-contract.md)
 
+## Standing delivery — 2026-10-28
+
+Meaningful authorized app changes include verification, a descriptive GitHub
+commit/push, and TestFlight delivery. The creator has granted standing permission;
+do not ask again for routine delivery. Use command-line tools without browser
+interaction, preserve release artifacts, and distinguish upload from processing
+and tester availability. [0012](../decisions/0012-standing-github-and-testflight-delivery.md)
+records the scope. Documentation-only changes go to GitHub without rebuilding
+an unchanged app. A later explicit hold instruction takes precedence.
+
 ## Creator code participation — 2026-10-26
 
 The creator explicitly wants to understand and participate in code and fine

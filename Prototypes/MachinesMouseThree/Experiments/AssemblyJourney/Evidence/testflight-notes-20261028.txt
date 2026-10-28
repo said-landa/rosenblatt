@@ -1,0 +1,5 @@
+Nueva apertura de Rosenblatt: nombre blanco con tipografía serif sobre fondo negro y transiciones suaves.
+
+Prueba cerrar la app por completo y abrirla de nuevo: la apertura dura aproximadamente 2.5 segundos. Cambia a otra app y vuelve; la apertura no debe repetirse. Revisa orientación vertical y horizontal, tamaños de texto y Reducir movimiento.
+
+El estudio de aprendizaje anterior permanece disponible. Esta actualización se centra en la apertura.

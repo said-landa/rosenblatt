@@ -11,10 +11,12 @@ The initial focus is electronics. We will choose an electronic Machine other
 than the mouse together; the exact device is still open. The mouse, foundation
 and circuit studies remain available as prior work.
 
-The first small revision adds a quiet Rosenblatt wordmark on a dark screen for
-about 2.5 seconds on a cold launch. It fades into the current content and does not
-repeat when returning from the background. Reduced Motion removes the fade.
-You approved the quiet wordmark and fade. Device feel remains to be reviewed.
+The opening uses only “Rosenblatt” in white serif lettering on pure black, as
+requested on 2026-10-27. Following the 2026-10-28 feedback, its exit fades gently
+for 1.6 seconds and the complete opening lasts about 3.5 seconds. The cover stays
+in place until the fade finishes. Background return does not repeat it; Reduced
+Motion retains a static 2.5-second opening. There is no rose emblem. Physical
+appearance remains to be reviewed.
 
 Your selected code workflow is: walk through a small change together, then you
 edit. Explain the intended behavior and relevant function before handing over

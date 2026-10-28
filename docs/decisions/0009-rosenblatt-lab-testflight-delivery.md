@@ -39,7 +39,9 @@ not establish which bundle received the changes.
   remain compatibility identifiers; no broad code or saved-data rename is implied.
 - New versions go through TestFlight. Direct development installation requires
   a later explicit request. Preserve versioned archives and source snapshots;
-  do not commit or push without the creator's request.
+  [0012](0012-standing-github-and-testflight-delivery.md) now supplies standing
+  authorization to commit/push meaningful changes and deliver meaningful app
+  revisions through command-line TestFlight without browser use.
 - The old stable content is replaced in place by the Lab experience in Rosenblatt.
   Retire the separate `.lab` installation only after the retained delivery is
   usable, preserving its local data first. Do not delete source or ASC records.

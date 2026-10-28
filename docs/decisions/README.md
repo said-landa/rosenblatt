@@ -67,3 +67,5 @@ Use a four-digit sequence and a short English slug, for example:
 - [0010 — Assembly Journey Experience](0010-assembly-journey-experience.md) — Accepted requirements; bounded foundation-plus-circuit study authorized 2026-10-23.
 
 - [0011 — Machine-First Investigation and Code Collaboration](0011-machine-first-investigation-and-code-collaboration.md) — Accepted direction; next Machine pending.
+
+- [0012 — Standing GitHub and TestFlight Delivery](0012-standing-github-and-testflight-delivery.md) — Accepted; meaningful app revisions include GitHub and command-line TestFlight delivery.

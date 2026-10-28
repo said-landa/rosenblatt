@@ -2,44 +2,45 @@
 
 > [Engineering state and history](../llm/status.md)
 
-## Current direction — 2026-10-26
+## Standing delivery instruction — 2026-10-28
 
-Creator follow-up: focus the first experience on electronics; the exact device
-is still open. The quiet wordmark/fade is approved as a direction, with physical
-review pending. Code workflow: small walkthrough, then creator edits. Next:
-narrow the electronic behavior to sensing, signals or computation before device
-selection. These are authoring candidates, not researched device selections.
+Meaningful app changes include GitHub commit/push and command-line TestFlight
+delivery automatically; no reminder is needed. The browser stays unused for
+release delivery. [0012](../decisions/0012-standing-github-and-testflight-delivery.md)
+records your standing authorization. Build 8 already satisfies the upload step;
+this cycle pushes its source and the saved delivery rule to GitHub.
 
+## Slower opening fade — 2026-10-28
 
-Start with a complete Machine and investigate downward only as deeply as needed
-to explain how it works. The next Machine will be chosen with you; it will not
-automatically be the mouse or require a particle opening. You also want direct
-participation in code and fine details. [Decision 0011](../decisions/0011-machine-first-investigation-and-code-collaboration.md)
-records this change; [machine-first direction](machine-first.md) keeps the brief.
+Following your report of a harsh disappearance, the exit fade now lasts **1.6
+seconds** instead of 0.6. The opening stays mounted until the animation finishes.
+The white serif lettering, black background and entrance are unchanged; the
+normal opening is now about 3.5 seconds in total. Reduced Motion retains a static
+2.5-second opening. Physical feel still needs your review.
 
-The first small revision adds a native Rosenblatt introduction for about 2.5
-seconds on a cold launch, fading into the existing content. It does not reset
-on background return. Reduced Motion uses a static transition. The quiet wordmark
-and fade are approved; the actual device presentation still needs review.
+**Rosenblatt 1.0 (8) uploaded successfully through the command-line release
+script. No browser was used.** Apple processing started. Processing completion,
+Insiders availability and phone installation remain unverified. All 37 release
+checks, signed archive, signature, identity and source-snapshot verification pass.
+Build 7 and its source/archive are preserved. No direct installation, public
+submission was performed. Its source is being committed/pushed with the new
+standing delivery instruction.
 
-Candidate **1.0 (7)** compiles for the iOS simulator. The 37 web tests, 11 native
-Swift package tests and offline bundle pass. The tests cover the retained models
-and runtime, not the new introduction's physical appearance or lifecycle. No
-new archive, upload, app installation or phone acceptance is claimed.
+[Build 8 evidence](../../Prototypes/MachinesMouseThree/Experiments/AssemblyJourney/Evidence/release-20261028-build8.md)
+records the change and limits. Next: update through TestFlight when available
+and review the fade, warm return and Reduced Motion on iPhone.
 
-The [Assembly Journey](assembly-journey.md) remains the packaged learning content
-until a Machine is selected and its replacement authored. Previous mouse,
-constituent, circuit and native padlock work remain recoverable. Three.js is the
-Lab renderer; the native-engine commitment and existing data identities remain.
+## Product and collaboration direction
 
-The accumulated work (`2044a57`) and introduction/guides (`c613bcb`) are pushed
-to GitHub. The follow-up preferences are recorded locally. Account
-screenshots remain local. Release delivery stays with the retained Rosenblatt
-TestFlight identity. Build 6's upload is historical; current Apple processing,
-tester availability and phone version have not been rechecked.
+Start with a complete electronic Machine and investigate downward only as deeply
+as needed to explain its function. The exact device is still open; selecting it
+is deferred while we refine the opening. The existing Assembly Journey remains
+the packaged learning content. Earlier mouse, constituent, circuit and native
+padlock studies remain recoverable. Three.js remains the Lab renderer.
 
-Next: choose one Machine, then choose the first observable action we want the
-learner to explain. We will author one complete-system scene and one subsystem
-transition in small, reviewable code changes.
+Your code workflow is a small walkthrough followed by your edit. Timing lives in
+`RosenblattOpeningTiming`; typography lives in `RosenblattWordmark`.
+[Decision 0011](../decisions/0011-machine-first-investigation-and-code-collaboration.md)
+and the [machine-first brief](machine-first.md) retain the agreed direction.
 
-[Code map](code-map.md) · [Upload TestFlight builds yourself](testflight.md).
+[Code map](code-map.md) · [TestFlight procedure](testflight.md).

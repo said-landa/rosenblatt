@@ -2,6 +2,16 @@
 
 > [Human procedure](../human/testflight.md) · Governing decision: 0009
 
+## Standing delivery authorization — 2026-10-28
+
+[0012](../decisions/0012-standing-github-and-testflight-delivery.md) requires
+GitHub commit/push and retained-identity TestFlight upload after meaningful
+authorized app changes. This is continuing permission, not a one-turn exception.
+Use the existing CLI without browser interaction. Verify before delivery and
+preserve source/archive/log evidence. Push documentation-only changes to GitHub
+without duplicating an unchanged binary. Build 8 already uploaded successfully;
+this cycle closes its source-control delivery and records the standing rule.
+
 ## Owning implementation
 
 - Project: `Prototypes/MachinesMouseThree/iOS/MachinesMouseLab.xcodeproj`.
@@ -20,10 +30,19 @@ archive from the retained copy if needed, verifies bundle/name/Lab flag and
 exports with the existing App Store Connect settings. It requires a valid local
 Xcode signing/account session and network access. Credentials stay outside Git.
 
-Current candidate is 1.0 (7), not a verified unused Apple build number. Check ASC
-before release. This cycle builds for validation only; no archive, upload,
-physical installation or public submission is implied. Earlier build 6 upload is
-historical evidence; processing and current device build were not rechecked.
+Rosenblatt 1.0 (7) was successfully archived and uploaded on 2026-10-28 through
+the existing script, with no browser use as explicitly required by the creator.
+Apple processing started; completion, group assignment and installation remain
+unverified. Future archives require a new build number. Source/archive snapshots
+and verification metadata are preserved. See the
+[release record](../../Prototypes/MachinesMouseThree/Experiments/AssemblyJourney/Evidence/release-20261028.md).
+
+Build 8 followed through the same command-line flow on 2026-10-28, increasing
+the opening's exit fade to 1.6 seconds and preserving the overlay until animation
+completion. Signed archive, signature and source verification passed; upload and
+export succeeded, with Apple processing started and tester availability unverified.
+[Build 8 evidence](../../Prototypes/MachinesMouseThree/Experiments/AssemblyJourney/Evidence/release-20261028-build8.md)
+retains the current result; the build 7 paragraph above is historical.
 
 ## Release evidence and limits
 
@@ -42,3 +61,12 @@ and public publication have their own review paths.
 Official Apple upload/internal-testing guidance was checked on 2026-10-26; links
 are in the human guide. Account-specific signing readiness, current ASC state
 and labels on the creator's installed Xcode were not verified by reading docs.
+
+## Browser restriction for the 2026-10-28 delivery
+
+The creator specifically prohibited browser use for this upload. The entire
+archive/upload and local verification used command-line tools. No connected
+App Store Connect API capability was available in the tool catalog, and no
+account API configuration was assumed or created. Xcode's authenticated upload
+completed normally. Its report that processing started does not establish
+completion or internal tester availability; preserve that distinction.

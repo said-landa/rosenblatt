@@ -89,5 +89,16 @@ only beneath explicit project-controlled contracts; classify them, contain
 their authority, preserve replacement paths, and let complete Course evidence
 determine the order and depth of native implementation.
 
-Preserve existing user changes in a dirty worktree. Do not commit or push unless
-the creator requests it.
+Preserve existing user changes in a dirty worktree.
+
+## Standing delivery instruction — 2026-10-28
+
+After each meaningful authorized app change, verify it, commit and push its
+coherent source/evidence/docs to GitHub, and upload a new build through the
+retained Rosenblatt TestFlight identity. The creator has granted standing
+authorization: do not wait for another commit/push/upload request. Use the
+command-line release workflow without opening or operating a browser. Preserve
+archives/source and report GitHub and TestFlight results separately, including
+unverified Apple processing/tester availability. Documentation-only changes go
+to GitHub without duplicating an unchanged app binary. A later explicit hold
+instruction takes precedence. See decision 0012.

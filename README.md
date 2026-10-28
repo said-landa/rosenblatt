@@ -7,16 +7,17 @@ participate directly in the code; see [machine-first direction](docs/human/machi
 
 The retained [Assembly Journey study](Prototypes/MachinesMouseThree/Experiments/AssemblyJourney/README.md)
 still supplies the app content pending that selection. A native cold-launch
-wordmark introduces the app for about 2.5 seconds. Its visual/device acceptance
+wordmark introduces the app with a slower 1.6-second exit fade, about 3.5 seconds
+in total. Its visual/device acceptance
 remains open; this is not yet a new machine-first Course.
 
 Start contributing with the [code map](docs/human/code-map.md) and
 [creator-operated TestFlight guide](docs/human/testflight.md).
 
 The Lab target delivers through the existing Rosenblatt TestFlight app,
-`com.machines.mouse.preview`. Candidate 1.0 (7) adds the native introduction and passes simulator compilation;
-it has not been archived or uploaded. Build 6 uploaded previously, with Apple
-processing and Insiders availability still unverified here. Build 4 is retained
+`com.machines.mouse.preview`. Rosenblatt 1.0 (8), including the slower white serif opening, was archived and
+uploaded from the command line on 2026-10-28. Apple processing started; completion,
+Insiders availability and phone installation remain unverified. Build 4 is retained
 for rollback within TestFlight's availability window. See
 [current status](docs/human/status.md) and
 [decision 0009](docs/decisions/0009-rosenblatt-lab-testflight-delivery.md).

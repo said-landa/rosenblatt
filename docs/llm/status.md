@@ -2,6 +2,76 @@
 
 > Human counterpart: [Current Project Position](../human/status.md)
 
+## Standing GitHub/TestFlight delivery — 2026-10-28
+
+The creator explicitly instructs that meaningful changes should always be pushed
+to GitHub and meaningful app revisions delivered through TestFlight, and asks
+that this be remembered. [0012](../decisions/0012-standing-github-and-testflight-delivery.md)
+replaces the earlier session-only commit/push authorization. AGENTS.md,
+collaboration contracts and delivery guidance now carry the standing rule.
+Command-line release only; no browser interaction. Preserve evidence, existing
+work and independent processing/availability claims. Documentation-only updates
+do not duplicate an unchanged binary; later explicit hold instructions prevail.
+
+Build 8 upload is already verified, with Apple processing started and tester
+availability unverified. The current source matches its preserved archive input.
+This cycle completes the outstanding GitHub commit/push for the opening work
+and records the requested persistent memory note. Earlier entries below retain
+the state before that source-control completion.
+
+## Slower opening fade and build 8 — 2026-10-28
+
+The creator reports the opening disappears harshly and asks to focus on a slower
+fade. Keep existing typography/black background/entrance; increase exit duration
+from 0.6 to 1.6 seconds with ease-in-out timing. Keep its start at 1.9 seconds,
+extending the normal total to about 3.5 seconds. Reduced Motion remains static
+for 2.5 seconds. Explicit overlay opacity animates to zero while it stays mounted;
+SwiftUI animation completion then clears the App-owned visible flag. Web input,
+accessibility and native navigation remain excluded until completion. This removes
+the removal-transition lifetime seam; no physical cause was reproduced.
+
+All 37 release checks, signed generic-iOS archive, signature/identity/offline
+resource verification and exact release-source snapshot matching pass. Build 8
+was uploaded successfully through the existing release script. Apple processing
+started; completion, tester availability and installation remain unverified.
+No browser, direct installation, public submission, Git commit or push was used.
+Versioned source/archive/log/hash artifacts preserve build 8 separately from 7.
+See [release evidence](../../Prototypes/MachinesMouseThree/Experiments/AssemblyJourney/Evidence/release-20261028-build8.md).
+Next: creator review of the fade on iPhone through TestFlight. Unit checks and
+archive success establish engineering results, not taste or physical timing.
+Earlier dated sections below describe previous states.
+
+## TestFlight upload — 2026-10-28
+
+Rosenblatt **1.0 (7)** with the refined white serif opening on black was archived
+and uploaded using `scripts/testflight-lab.sh archive` and `upload`, at the
+creator's explicit request. No browser was opened or used. All 37 release checks,
+signed archive, signature and identity verification pass. Exact source and archive
+snapshots are retained under the ignored versioned release folder.
+
+Apple accepted the upload and began processing at 15:33:47 UTC. Processing
+completion, Insiders availability and phone installation remain unverified.
+No direct installation, public submission, Git commit or Git push was performed.
+See [release evidence](../../Prototypes/MachinesMouseThree/Experiments/AssemblyJourney/Evidence/release-20261028.md).
+Next: update through TestFlight when available and review the opening on iPhone.
+Earlier dated sections record the pre-upload state.
+
+## Opening refinement — 2026-10-27
+
+The opening now uses only the name Rosenblatt in elegant white serif lettering
+on pure black. The creator explicitly clarified that no rose emblem is wanted.
+A 0.5-second fade-in leads to a hold, then a 0.6-second fade into the app starting
+at 1.9 seconds. Reduced Motion uses static lettering and a cut at 2.5 seconds.
+The system launch background is black too. This refinement takes priority over
+Machine selection for the current cycle; the electronics device remains open.
+
+Unsigned iOS simulator compilation passes. Static native typography previews
+were inspected; phone appearance and animated lifecycle remain unverified.
+Changes are local, with no new upload, installation, commit or push. See the
+[opening evidence](../../Prototypes/MachinesMouseThree/Experiments/AssemblyJourney/Evidence/opening-20261027.md).
+Next: review the opening and walk through its font/spacing/timing controls before
+the creator's next small edit. Earlier dated sections describe prior iterations.
+
 ## Machine-first direction and code participation — 2026-10-26
 
 Creator follow-up: focus the first experience on electronics; the exact device

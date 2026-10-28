@@ -31,7 +31,9 @@ and device behavior still need review.
 
 The creator explicitly authorizes committing and pushing the accumulated source
 changes to GitHub and requests instructions for personally delivering future
-TestFlight builds. This is session authorization, not a permanent auto-push rule.
+TestFlight builds. That authorization was initially session-scoped;
+[0012](0012-standing-github-and-testflight-delivery.md) subsequently establishes
+standing GitHub/TestFlight delivery for meaningful changes.
 No TestFlight upload is requested in this cycle.
 
 ## Why now
@@ -95,3 +97,34 @@ Working mode is now explicit: explain a small change and its relevant code, then
 let the creator edit. Perform independent enabling work as needed, but do not
 preempt an edit deliberately reserved for the creator. Next question narrows the
 observable behavior: sensing, signals or computation. No device is selected yet.
+
+## Opening refinement — 2026-10-27
+
+The creator requests a pure black background, white Rosenblatt lettering in an
+elegant font, and a fade. They clarify “Just the Rosenblatt name in white”:
+no rose emblem. This is an explicit instruction to implement the opening;
+no particular code edit has been reserved for the creator in this cycle.
+
+The implementation uses the system serif face at a Dynamic Type-relative base
+size of 40 points, regular weight, and 1.4-point tracking. These numeric choices
+are reviewable implementation defaults. Lettering fades in over 0.5 seconds;
+the opening starts fading into the app at 1.9 seconds, finishing at about 2.5.
+Reduced Motion displays static lettering and cuts at 2.5 seconds. The Lab's
+system launch background is also black. No floral asset or external font is
+added. Publication and physical appearance acceptance remain separate.
+
+## Gentler exit fade — 2026-10-28
+
+The creator reports a harsh disappearance and asks to focus on slowing the fade.
+Keep the white serif wordmark, pure black background and 0.5-second entrance.
+Increase the exit fade from 0.6 to 1.6 seconds with ease-in-out timing; retain
+its start at 1.9 seconds, extending the normal opening to about 3.5 seconds.
+The new timing is a reviewable implementation choice, not measured taste
+acceptance. Reduced Motion retains its 2.5-second static opening.
+
+Animate the overlay's explicit opacity while keeping it mounted, then dismiss
+it from SwiftUI's animation completion. Input and accessibility remain excluded
+until that completion. This avoids coupling dismissal to the beginning of the
+fade. The report is experience evidence; its device cause was not reproduced.
+Continue the authorized command-line TestFlight feedback cycle without browser
+use, preserving the prior build/source. No other experience redesign is in scope.

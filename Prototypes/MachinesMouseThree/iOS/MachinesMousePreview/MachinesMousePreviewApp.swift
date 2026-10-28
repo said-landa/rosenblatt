@@ -6,6 +6,13 @@ import AVFoundation
 private let isLab = Bundle.main.object(forInfoDictionaryKey: "RosenblattLabExperience") as? Bool == true
     || Bundle.main.bundleIdentifier?.hasSuffix(".lab") == true
 
+private enum RosenblattOpeningTiming {
+    static let duration = 3.5
+    static let fadeIn = 0.5
+    static let fadeOut = 1.6
+    static let reducedDuration = 2.5
+}
+
 @main
 struct MachinesMousePreviewApp: App {
     // Process-local presentation state: returning from the background does not replay it.
@@ -23,6 +30,7 @@ private struct MachinesMousePreviewScreen: View {
     @Environment(\.scenePhase) private var scenePhase
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Binding var introVisible: Bool
+    @State private var introOpacity = 1.0
     @State private var failure: String?
     @State private var reloadID = UUID()
     @State private var navigationSection = "home"
@@ -54,7 +62,7 @@ private struct MachinesMousePreviewScreen: View {
             }
             if introVisible && failure == nil {
                 RosenblattIntroduction()
-                    .transition(.opacity)
+                    .opacity(introOpacity)
                     .zIndex(1)
             }
         }
@@ -62,9 +70,18 @@ private struct MachinesMousePreviewScreen: View {
             guard introVisible else { return }
             // The WebView loads concurrently. No blocking sleep on the UI thread.
             do {
-                try await Task.sleep(for: .seconds(reduceMotion ? 2.5 : 2.15))
+                let hold = reduceMotion ? RosenblattOpeningTiming.reducedDuration
+                    : RosenblattOpeningTiming.duration - RosenblattOpeningTiming.fadeOut
+                try await Task.sleep(for: .seconds(hold))
             } catch { return }
-            withAnimation(reduceMotion ? nil : .easeOut(duration: 0.35)) {
+            guard !reduceMotion else {
+                introVisible = false
+                return
+            }
+            // Keep the cover mounted and input blocked until the fade actually finishes.
+            withAnimation(.easeInOut(duration: RosenblattOpeningTiming.fadeOut), completionCriteria: .removed) {
+                introOpacity = 0
+            } completion: {
                 introVisible = false
             }
         }
@@ -80,19 +97,37 @@ private struct MachinesMousePreviewScreen: View {
 // An in-app introduction, separate from the system-managed iOS launch screen.
 // Keep its first version small so timing, type and transition can be reviewed independently.
 private struct RosenblattIntroduction: View {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @State private var wordmarkVisible = false
+
     var body: some View {
         ZStack {
-            Color(red: 8 / 255, green: 13 / 255, blue: 19 / 255)
-                .ignoresSafeArea()
-            Text("Rosenblatt")
-                .font(.system(.largeTitle, design: .default, weight: .medium))
-                .tracking(0.7)
-                .foregroundStyle(.white)
-                .padding(24)
-                .multilineTextAlignment(.center)
-                .accessibilityAddTraits(.isHeader)
+            Color.black.ignoresSafeArea()
+            RosenblattWordmark()
+                .opacity(wordmarkVisible || reduceMotion ? 1 : 0)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .task {
+            withAnimation(reduceMotion ? nil : .easeInOut(duration: RosenblattOpeningTiming.fadeIn)) {
+                wordmarkVisible = true
+            }
+        }
+    }
+}
+
+// The built-in serif face needs no downloaded font. ScaledMetric follows Dynamic Type.
+private struct RosenblattWordmark: View {
+    @ScaledMetric(relativeTo: .largeTitle) private var wordmarkSize = 40.0
+
+    var body: some View {
+        Text("Rosenblatt")
+            .font(.system(size: wordmarkSize, weight: .regular, design: .serif))
+            .tracking(1.4)
+            .foregroundStyle(.white)
+            .lineLimit(1)
+            .minimumScaleFactor(0.5)
+            .padding(.horizontal, 32)
+            .accessibilityAddTraits(.isHeader)
     }
 }
 

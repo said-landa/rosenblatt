@@ -11,24 +11,34 @@ The creator wants to participate directly in code and choose a different Machine
 from the mouse through focused questions. Do not silently choose one or create
 a whole Course around an assistant suggestion.
 
-The concrete authored behavior in scope is a two-to-three-second introduction on
-cold launch, followed by the regular interface, without replay on background
-return. Initial visual choice: a centered wordmark against #080d13; no new asset,
-audio, analytics, persistence key or dependency. The creator approved the quiet
-wordmark/fade in the follow-up; physical implementation acceptance remains open.
+The concrete authored behavior is a brief introduction on cold launch, followed
+by the regular interface without replay on background return. The 2026-10-28
+feedback requests a slower exit, extending the earlier two-to-three-second
+budget to a reviewable target of about 3.5 seconds. On 2026-10-27 the creator specifies pure black, elegant white lettering
+and fade, and clarifies that only the name is wanted, without a rose emblem.
+`RosenblattWordmark` uses the system serif face, regular weight, a 40-point
+Dynamic Type-relative base size, 1.4-point tracking, and horizontal clearance.
+No downloaded font, floral asset, audio, analytics, persistence key or dependency
+is introduced. Physical implementation acceptance remains open.
 
 Implementation is in `MachinesMousePreviewApp.swift`, shared by the retained
 native targets. The overlay is Lab-only. App-owned `@State` starts visible once;
-WebView creation runs behind it. A cancellable async task holds for 2.15 seconds
-and an ease-out transition takes 0.35 seconds. Reduced Motion holds 2.5 seconds
-and dismisses without animation. Scene phase does not restart the task. The web
+WebView creation runs behind it. The wordmark fades in over 0.5 seconds. A
+cancellable parent task waits 1.9 seconds from appearance before a 1.6-second
+ease-in-out exit fades into the app. The overlay remains mounted with explicit
+`introOpacity` state until SwiftUI animation completion clears the App-owned
+visible flag. Input and accessibility stay excluded until completion. This
+replaces removal-driven transition timing. `RosenblattOpeningTiming` owns the
+3.5-second normal total, entrance, exit and separate Reduced Motion duration.
+Reduced Motion holds static lettering for 2.5 seconds and dismisses without
+animation. The Lab launch-screen color asset is pure black as well. Scene phase does not restart the task. The web
 content cannot receive touches or accessibility focus while covered. Navigation
 is hidden during the introduction. Native failure UI takes precedence if loading
 fails. Reloading the WebView does not reset the App-owned flag.
 
 The system-managed launch screen is separate. The selected treatment controls
 the in-app introduction only. Real cold-start latency adds OS launch time; no
-measured promise of exactly 2.5 seconds from icon tap is made. Background
+measured promise of exactly 3.5 seconds from icon tap is made. Background
 suspension can defer task delivery; resuming does not create a second intro.
 
 ## Authorship loop and depth criterion
@@ -61,12 +71,17 @@ selection alone.
 
 ## Compatibility and delivery
 
-Lab candidate is 1.0 (7); no archive/upload has been run for this revision.
+Lab 1.0 (8), the slower-fade revision, was archived and uploaded on 2026-10-28
+without browser use. Build 7 remains preserved. Apple processing started; tester
+availability and installation remain unverified.
 The packaged learning content remains Assembly Journey pending Machine selection.
 Retain `com.machines.mouse.preview`, existing progress, historical source and
 release archives. Three.js remains a contained renderer beneath project-owned
 state/camera/behavior contracts, under 0003. Normal delivery remains TestFlight.
-GitHub commit/push is explicitly authorized for this session, not future sessions.
+[0012](../decisions/0012-standing-github-and-testflight-delivery.md) grants standing
+authorization for meaningful GitHub commit/push and app TestFlight delivery.
+Use command-line release tools without browser interaction; no fresh reminder
+is needed.
 
 ## Verification
 

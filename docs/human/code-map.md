@@ -26,12 +26,14 @@ the edit. A first walkthrough can follow the introduction:
 1. `introVisible` belongs to the SwiftUI App. It starts true for the Lab.
 2. The WebView loads while `RosenblattIntroduction` covers it.
 3. `Task.sleep` waits asynchronously, leaving the UI thread free.
-4. `withAnimation` changes the flag to false and fades the overlay away.
+4. `withAnimation` fades `introOpacity` to zero; its completion then clears the
+   visible flag. The cover stays mounted until the fade ends.
 5. Returning from the background does not recreate the flag; a new app process does.
 
-The two timing values, 2.15 and 0.35 seconds, determine the normal hold and fade.
-Reduced Motion uses a static 2.5-second hold instead. These are small, readable
-places to make and evaluate a change together. The new Machine's code will be
+`RosenblattOpeningTiming` sets the 3.5-second total, 0.5-second entrance and
+1.6-second exit. The exit still starts at 1.9 seconds. `RosenblattWordmark` controls
+the serif face, `wordmarkSize = 40.0`, and `.tracking(1.4)`. Reduced Motion uses
+a separate static 2.5-second hold. These are small, readable places to evaluate a change together. The new Machine's code will be
 chosen after its function and first interaction are authored.
 
 For local web exploration, run `npm start` from `Prototypes/MachinesMouseThree`

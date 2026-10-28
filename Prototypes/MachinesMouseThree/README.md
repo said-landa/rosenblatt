@@ -16,7 +16,9 @@ The active app is Rosenblatt. Build the Lab target, `iOS/MachinesMouseLab.xcodep
 with the retained [Assembly Journey study](Experiments/AssemblyJourney/README.md).
 The next direction is [machine-first investigation](../../docs/human/machine-first.md);
 [code map](../../docs/human/code-map.md) and [self-service TestFlight guide](../../docs/human/testflight.md)
-explain the current entry points. Candidate 1.0 (7) adds a native cold-launch introduction; it is not uploaded.
+explain the current entry points. Rosenblatt 1.0 (8), including the slower native opening fade, was
+uploaded through the command line on 2026-10-28. Apple processing and tester
+availability remain separate; no browser was used.
 It deliberately uses Rosenblatt's existing `com.machines.mouse.preview` identity;
 `RosenblattLabExperience` selects the native Lab behavior independently of the
 bundle suffix. This keeps one app and its TestFlight history for eventual release.

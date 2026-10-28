@@ -2,8 +2,10 @@
 
 > Update 2026-10-26: the [machine-first direction](../../../../docs/human/machine-first.md)
 > replaces mandatory foundation-first sequencing. This study remains the packaged
-> content pending selection of the next Machine. Candidate 1.0 (7) adds a native
-> cold-launch introduction; it has not been uploaded.
+> content pending selection of the next Machine. Build 7 added a native
+> cold-launch introduction; build 8 slows its exit fade to 1.6 seconds. Build 8
+> was uploaded on 2026-10-28 via
+> command-line tools, with Apple processing started and tester availability unverified.
 
 
 Authorized by the creator on 2026-10-23 in response to the proposed foundation

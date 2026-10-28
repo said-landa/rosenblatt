@@ -2,6 +2,12 @@
 
 > [Detailed release contract](../llm/testflight.md)
 
+Meaningful app changes now include GitHub commit/push and command-line TestFlight
+delivery by default, under your [standing instruction](../decisions/0012-standing-github-and-testflight-delivery.md).
+You do not need to remind the LLM to deliver each revision. The LLM uses the
+script below without browser interaction; the manual UI steps are available
+for your own use. Upload, Apple processing and availability remain distinct.
+
 Use `Prototypes/MachinesMouseThree/iOS/MachinesMouseLab.xcodeproj` and the
 `MachinesMouseLab` scheme. The retained app is Rosenblatt with bundle identifier
 `com.machines.mouse.preview`. The source filename containing “Preview” is shared
@@ -11,7 +17,8 @@ native code; it is not a reason to select the older Preview project.
    Apple Developer account authorized for this app. Confirm the target's signing
    team and automatic signing.
 2. In the Lab target's General tab, set a build number unused in App Store Connect.
-   The local candidate is version 1.0, build 7; check TestFlight before using it.
+   Use a new build number for each archive; builds 7 and 8 have already been
+   uploaded. Build 8 contains the slower-fade revision.
    Keep the version at 1.0 unless deliberately preparing another version.
 3. In Terminal, preserve an archive and source snapshot using the existing script:
 
