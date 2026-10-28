@@ -15,9 +15,13 @@ do not duplicate an unchanged binary; later explicit hold instructions prevail.
 
 Build 8 upload is already verified, with Apple processing started and tester
 availability unverified. The current source matches its preserved archive input.
-This cycle completes the outstanding GitHub commit/push for the opening work
-and records the requested persistent memory note. Earlier entries below retain
-the state before that source-control completion.
+GitHub commit `99fffd3eabd133ba573750a78212a8892c3554f1` was pushed to
+`origin/main`; a fresh remote-head check confirms that revision. It contains the
+opening work, release evidence and standing delivery rule. The requested memory
+note is saved under the ad hoc extensions notes directory. The worktree was clean
+after the push. This result record is a documentation-only follow-up and does
+not change build 8 or require a duplicate upload. Earlier entries below retain
+the state before source-control completion.
 
 ## Slower opening fade and build 8 — 2026-10-28
 

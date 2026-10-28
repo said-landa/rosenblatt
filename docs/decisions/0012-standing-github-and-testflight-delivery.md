@@ -67,3 +67,12 @@ Standing authorization is not a promise that external services cannot fail.
 The creator can revise this policy at any time. Preserve recoverable Git history
 and versioned release artifacts. Next: push the existing opening changes and
 record the verified GitHub result, then continue the usual app feedback cycle.
+
+## Result — 2026-10-28
+
+Commit `99fffd3eabd133ba573750a78212a8892c3554f1` contains the slower opening,
+release evidence and this standing delivery contract. Push to `origin/main`
+succeeded and the remote head was verified. Build 8's current app input files
+match its preserved source snapshot and successful upload record. The requested
+persistent memory note is saved. This result update changes documentation only;
+no duplicate TestFlight binary is uploaded.

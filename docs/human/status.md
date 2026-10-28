@@ -8,7 +8,7 @@ Meaningful app changes include GitHub commit/push and command-line TestFlight
 delivery automatically; no reminder is needed. The browser stays unused for
 release delivery. [0012](../decisions/0012-standing-github-and-testflight-delivery.md)
 records your standing authorization. Build 8 already satisfies the upload step;
-this cycle pushes its source and the saved delivery rule to GitHub.
+the source and saved delivery rule are pushed to GitHub as `99fffd3`.
 
 ## Slower opening fade — 2026-10-28
 
@@ -23,8 +23,8 @@ script. No browser was used.** Apple processing started. Processing completion,
 Insiders availability and phone installation remain unverified. All 37 release
 checks, signed archive, signature, identity and source-snapshot verification pass.
 Build 7 and its source/archive are preserved. No direct installation, public
-submission was performed. Its source is being committed/pushed with the new
-standing delivery instruction.
+submission was performed. Its source is committed and pushed as `99fffd3`
+with the standing delivery instruction.
 
 [Build 8 evidence](../../Prototypes/MachinesMouseThree/Experiments/AssemblyJourney/Evidence/release-20261028-build8.md)
 records the change and limits. Next: update through TestFlight when available
