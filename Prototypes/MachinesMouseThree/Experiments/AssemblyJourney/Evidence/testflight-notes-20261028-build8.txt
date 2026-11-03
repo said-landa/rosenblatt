@@ -1,3 +1,0 @@
-La apertura de Rosenblatt ahora se desvanece más despacio: transición de salida de 1.6 segundos, frente a los 0.6 anteriores. La pantalla permanece hasta que termina la transición.
-
-Se conserva el nombre blanco con tipografía serif sobre fondo negro. La apertura completa dura aproximadamente 3.5 segundos. Prueba un inicio en frío y volver desde otra app. Reducir movimiento mantiene la apertura estática de 2.5 segundos.

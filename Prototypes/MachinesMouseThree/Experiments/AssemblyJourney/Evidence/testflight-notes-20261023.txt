@@ -1,9 +1,0 @@
-Assembly Journey study
-
-A new short opening connects quarks, strong binding, an independent electron and hydrogen-1 to future construction paths. Explanations fade and can be reopened. Preview each assembly, then confirm its endpoint.
-
-Choose Electronics for a separate circuit preview. Assemble a 3 V source, 220 ohm resistor, LED and switch. Close/open the switch: the modeled current changes between 4.55 mA and zero, and the LED turns on/off. The manufactured-parts preview does not award material or Course prerequisites.
-
-Tap Power, Limit, Light or Contact to travel to a board-level view. Sweep the scene to inspect, then use Return to journey. Replay the shared beginning from Paths. Sound remains off.
-
-Please review clarity of the symbols and connections, one-handed touch feel, camera return, portrait/landscape, background/resume and device smoothness. The remaining paths are marked in development. This is an illustrative study, not a complete scientific or electronics Course.
