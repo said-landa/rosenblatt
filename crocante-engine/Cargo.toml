@@ -1,7 +1,10 @@
+#Cargo.toml defines the executable package and its dependencies.
+
+
 [package]
 name = "crocante-engine"
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-winit = "0.30"
+winit = "0.30" #Window creation and event handling 
