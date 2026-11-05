@@ -1,2 +1,5 @@
+#.gitignore excludes generated files such as target/
 
+#Rust build output
 /target
+
